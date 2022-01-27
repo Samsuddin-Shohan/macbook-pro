@@ -27,14 +27,15 @@
                         </div>
                         <div id="memory" class="mb-3">
                             <p class="fw-bolder lh-sm">Memory</p>
-                            <button type="button" class="btn btn-outline-secondary me-2" id="memory-1">8 GB Unified Memory</button>
+                            <button type="button" class="btn btn-outline-secondary me-2" id="memory-1" 
+                            >8 GB Unified Memory</button>
                             <button type="button" class="btn btn-outline-secondary" id="memory-2">16 GB Unified Memory</button>
                         </div>
                         <div id="storage" class="mb-3">
                             <p class="fw-bolder lh-sm">Storage</p>
                             <button type="button" class="btn btn-outline-secondary me-2" id="storage-1">256 GB SSD Storage</button>
                             <button type="button" class="btn btn-outline-secondary me-2" id="storage-2">512 GB SSD Storage</button>
-                            <button type="button" class="btn btn-outline-secondary me-2" id="storage-1">1 TB SSD Storage</button>
+                            <button type="button" class="btn btn-outline-secondary me-2" id="storage-3">1 TB SSD Storage</button>
                             
                         </div>
                         <div id="delivary" class="mb-3">
@@ -48,25 +49,25 @@
                                 <tbody >
                                   <tr >
                                     <td>Best Price</td>
-                                    <td>$1299</td>
+                                    <td>$<span id="best-price">1299</span></td>
                                     
                                   </tr>
                                   <tr>
                                     
                                     <td>Extra Memory Cost</td>
-                                    <td>$0</td>
+                                    <td>$<span id="extra-memory">0</span></td>
                                   </tr>
                                   <tr>
                                     <td>Extra Storage Cost</td>
-                                    <td>$0</td>
+                                    <td>$<span id="extra-storage" >0</span></td>
                                   </tr>
                                   <tr class="border-dark border-4 border-start-0 border-end-0 border-top-0  ">
                                     <td>Delivary Cost</td>
-                                    <td>$0</td>
+                                    <td>$<span id="extra-delivary">0</span></td>
                                   </tr>
                                   <tr  >
                                     <td>Total Price</td>
-                                    <td>$1299</td>
+                                    <td>$<span id="total-price" >1299</span></td>
                                   </tr>
                                 </tbody>
                             </table>
@@ -75,7 +76,7 @@
                             <p class="fw-bolder">Apply Promo code</p>
                             <div class="input-group mb-3 w-50">
                                
-                                <input type="text" class="form-control" placeholder="Promo Code" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="Promo Code" aria-label="Username" aria-describedby="basic-addon1" id="promo-input">
                                 <span class="input-group-text bg-primary" id="basic-addon1">Apply Now</span>
                               </div>
                         </div>
@@ -89,7 +90,7 @@
         </div>
    </section>
    <footer class="text-center p-3 border-light">
-        <h1>Total: $<span>1299</span></h1>
+        <h1>Total: $<span id="total" >1299</span></h1>
    </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
